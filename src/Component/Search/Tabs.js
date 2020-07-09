@@ -8,10 +8,9 @@ import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import FlightLandIcon from '@material-ui/icons/FlightLand';
 import FlightTakeoffIcon from '@material-ui/icons/FlightTakeoff';
-
+import "./responsive.css"
 
 import TextField from '@material-ui/core/TextField';
-
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
 
@@ -117,9 +116,8 @@ export default function NavTabs() {
               </select>
             </div>
           </div>
-          <div className="col-12">      
+          <div className="col-12 dataSelect">      
               <TextField 
-              style={{marginRight:"30px"}}
               id="date"
               type="date"
               defaultValue="2017-05-24"
@@ -128,6 +126,7 @@ export default function NavTabs() {
                 shrink: true,
               }}
             />            
+            <div className="space_30"></div>      
             <TextField
               id="date"
               type="date"

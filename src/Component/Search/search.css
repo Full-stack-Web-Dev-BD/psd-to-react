@@ -65,3 +65,9 @@
 .MuiBox-root-10 {
     padding-bottom: 0 !important;
 }
+.dataSelect{
+    display: flex !important
+}
+.space_30{
+    padding: 10px;
+}

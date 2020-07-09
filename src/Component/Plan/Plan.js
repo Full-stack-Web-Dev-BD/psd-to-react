@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from './Navbar'
 import AddIcon from '@material-ui/icons/Add';
 import "./plan.css"
+import "./responsive.css"
 const Index = () => {
     return (
         <>
