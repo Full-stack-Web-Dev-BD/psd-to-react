@@ -1,0 +1,26 @@
+.MuiTabs-root{
+    background-color: #152044 !important;
+}
+.PrivateTabIndicator-colorSecondary-7{
+    background-color: white !important;
+}
+.MuiTab-wrapper{
+    color: white !important;
+}
+.inputFiled{
+    position: relative;
+}
+.inputFiled select{
+    border: 0 !important;
+    padding-left: 60px !important;
+
+}
+.tabContent{
+    background-color: #152044 !important;
+}
+
+.iconDiv{
+    left: 28px;
+    position: absolute;
+    top: 5px;    
+}
