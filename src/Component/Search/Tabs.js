@@ -1,4 +1,4 @@
-import  React, { useState } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
@@ -8,10 +8,11 @@ import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import FlightLandIcon from '@material-ui/icons/FlightLand';
 import FlightTakeoffIcon from '@material-ui/icons/FlightTakeoff';
-import {KeyboardDatePicker} from '@material-ui/pickers';
 
 
-const  TabPanel=(props)=> {
+import TextField from '@material-ui/core/TextField';
+
+function TabPanel(props) {
   const { children, value, index, ...other } = props;
 
   return (
@@ -66,12 +67,6 @@ const useStyles = makeStyles((theme) => ({
 export default function NavTabs() {
   const classes = useStyles();
   const [value, setValue] = React.useState(0);
-  const [selectedDate, setSelectedDate] = React.useState(new Date('2014-08-18T21:11:54'));
-
-  
-const handleDateChange = (date) => {
-  setSelectedDate(date);
-};
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -122,24 +117,48 @@ const handleDateChange = (date) => {
               </select>
             </div>
           </div>
-          <div className="  col-xs-12 col-sm-12 col-md-6">            
-            <div className="  col-xs-12 col-sm-12 col-md-6">                
-              <KeyboardDatePicker
-                disableToolbar
-                variant="inline"
-                format="MM/dd/yyyy"
-                margin="normal"
-                id="date-picker-inline"
-                label="Date picker inline"
-                value={selectedDate}
-                onChange={handleDateChange}
-                KeyboardButtonProps={{
-                  'aria-label': 'change date',
-                }}
-              />
+          <div className="col-12">      
+              <TextField 
+              style={{marginRight:"30px"}}
+              id="date"
+              type="date"
+              defaultValue="2017-05-24"
+              className={classes.textField}
+              InputLabelProps={{
+                shrink: true,
+              }}
+            />            
+            <TextField
+              id="date"
+              type="date"
+              defaultValue="2017-05-24"
+              className={classes.textField}
+              InputLabelProps={{
+                shrink: true,
+              }}
+            />  
+          </div>
+          <div className="col-12 mt-3">
+            <div className="searchIcon">
+              <img src={require('../img/search_icon.png')}/>
             </div>
-            <div className="  col-xs-12 col-sm-12 col-md-6">            
-            </div>
+              <div className="economy_content">
+                <div style={{float:'left'}}>
+                  <img style={{maxHeight:'40px'}} src={require('../img/man.png')}/>
+                </div>
+                <div style={{maxWidth:'200px' ,float:"left"}}>
+                  <div class="form-group inputFiled economy">
+                    <select class="form-control " id="exampleFormControlSelect1">
+                      <option>Economy</option>
+                      <option>item </option>
+                      <option>item </option>
+                      <option>item </option>
+                      <option>item </option>
+                      <option>item </option>
+                    </select>
+                  </div>
+                </div>
+              </div>
           </div>
         </div>
       </TabPanel>
