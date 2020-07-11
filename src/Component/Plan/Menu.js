@@ -30,8 +30,6 @@ export default function SimpleMenu() {
       >
         <MenuItem onClick={handleClose}><Link to='/'>Plan</Link></MenuItem>
         <MenuItem onClick={handleClose}><Link to='/search'>Search</Link></MenuItem>
-        <MenuItem onClick={handleClose}><Link to='/'>pate</Link></MenuItem>
-        <MenuItem onClick={handleClose}><Link to='/'>Plan</Link></MenuItem>
       </Menu>
     </div>
   );

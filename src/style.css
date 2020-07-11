@@ -1,3 +1,89 @@
 .MuiSvgIcon-root{
     color: white;
 }
+.makeStyles-title-6{
+    color: white;
+}
+.PrivateTabIndicator-colorSecondary-10 {
+    background-color: white !important;
+}
+body , h4 , h5 , h6 {
+    color: white !important;
+}
+
+.MuiAppBar-colorPrimary {
+    display: none !important;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .searchIcon {
+        right: 50px;
+    }
+    .planleftContent {
+        padding: 30px 39px;
+    }
+}
+
+@media only screen and (min-width: 646px) {
+    .ant-layout-sider{
+        display: block;
+    }
+    
+    .site-layout{
+        margin: '0 16px' 
+   }
+}
+@media only screen and (max-width: 645px) {
+    .ant-layout-sider{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .searchIcon {
+        right: 10px !important;
+    }
+    .travelPlan {
+        height: 130px;
+    }
+    .planleftContent {
+        padding: 30px 24px;
+    }
+    .planleftContent p {
+        font-size: 12px;
+    }
+    .planleftContent h4 {
+        font-size: 22px;
+    }
+    .planleftContent {
+        padding: 23px 24px;
+    }
+    .barlin {
+        height: 135px;
+    }
+}
+
+
+
+
+@media (min-width: 0px) and (max-width: 645px) {
+    .MuiAppBar-colorPrimary {
+        display: block !important;
+    }
+    
+
+}
+
+@media only screen and (max-width: 395px) {
+    .economy select{
+        padding-left: 15px !important;
+    }
+    .economy_content img{ 
+        max-height: 28px !important;
+
+    }
+    .site-layout{
+        padding: 3px;
+    }
+}
